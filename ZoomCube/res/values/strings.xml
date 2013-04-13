@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Maps_Test</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_search">Search</string>
+    <string name="edit_message">Enter a location</string>
+    <string name="button_send">Send</string>
+    <string name="title_activity_photo_view">PhotoViewActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_tag">TagActivity</string>
+
+</resources>
