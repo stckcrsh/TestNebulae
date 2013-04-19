@@ -8,8 +8,12 @@
     <string name="edit_message">Enter a location</string>
     <string name="button_send">Send</string>
     <string name="title_activity_photo_view">PhotoViewActivity</string>
+        <string name="title_activity_camera">CameraActivity</string>
+    
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
-    <string name="title_activity_tag">TagActivity</string>
+    <string name="title_activity_tag">TagActivity</string><string name="flash_button">Toggle Flash</string><string name="shutter_button">Take Picture!</string><string name="change_cam_button">Change Camera</string>
+    <string name="button_ok">Ok</string>
+    <string name="button_done">Done</string>
 
 </resources>

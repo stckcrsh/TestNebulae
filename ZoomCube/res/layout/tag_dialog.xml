@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >   
+    
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tag_text"
+        android:orientation="horizontal" 
+        android:id="@+id/tag_layout" >
+        
+    </LinearLayout>
+    
+
+    <EditText
+        android:id="@+id/tag_eText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tag_layout"
+        android:hint="Type Tags Here"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/buttonOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tag_eText"
+        android:text="@string/button_ok" />
+
+    <Button
+        android:id="@+id/buttonDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonOK"
+        android:layout_alignBottom="@+id/buttonOK"
+        android:layout_alignParentRight="true"
+        android:text="@string/button_done" />
+
+   
+</RelativeLayout>
