@@ -73,6 +73,25 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.zoom.map.LoadImage"
+            android:label="@string/title_activity_search" >
+            <intent-filter>
+                
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zoom.map.MosaicActivity"
+            android:label="@string/title_activity_photo_view" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+            
+               
+            
+        </activity>
+        <activity
             android:name="com.zoom.map.PhotoViewActivity"
             android:label="@string/title_activity_photo_view" >
             
@@ -102,7 +121,6 @@
             android:label="@string/title_activity_tag" >
             
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>

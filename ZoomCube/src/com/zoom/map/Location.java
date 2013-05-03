@@ -5,6 +5,7 @@ import java.util.Date;
 public class Location {
 	
 	public enum COLUMNS_LOCATIONS{
+		ID				("_id"),
 		ITEMID			("itemId"),
 		LONGITUDE		("longitude"),
 		LATTITUDE		("lattitude"),
@@ -21,7 +22,8 @@ public class Location {
 	public static final String TABLE_NAME = "locations";
 	
 	public final static String CREATE_TABLE = "CREATE TABLE IF NOT EXISTS '"+TABLE_NAME+"' " +
-			"('"+COLUMNS_LOCATIONS.ITEMID.Value()+"' INTEGER PRIMARY KEY  NOT NULL  UNIQUE , " +
+			"('"+COLUMNS_LOCATIONS.ID.Value()+"' INTEGER NOT NULL UNIQUE AUTOINCREMENT, "+
+			"'"+COLUMNS_LOCATIONS.ITEMID.Value()+"' INTEGER NOT NULL UNIQUE, " +
 			"'"+COLUMNS_LOCATIONS.LONGITUDE.Value()+"' DOUBLE NOT NULL , " +
 			"'"+COLUMNS_LOCATIONS.LATTITUDE.Value()+"' DOUBLE NOT NULL , " +
 			"'"+COLUMNS_LOCATIONS.TIMESTAMP.Value()+"' DATETIME NOT NULL );";
@@ -41,5 +43,9 @@ public class Location {
 	private Date timestamp;
 	public Date GetTimestamp(){return timestamp;}
 	public void SetDate(Date _timestamp){timestamp = _timestamp;}
+	
+	private long id;
+	public long GetId (){return id;}
+	public void SetId(long _id){id = _id;}
 	
 }

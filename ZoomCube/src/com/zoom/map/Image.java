@@ -47,6 +47,14 @@ public class Image {
 	public String GetDescription(){return description;}
 	public void SetDescription(String _value){description = _value;}
 	
+	private Object[] tags;
+	public Object[] GetTags(){return tags;}
+	public void SetTags(Object[] _value){tags = _value;}
+	
+	private String onlineId;
+	public String GetOnlineId(){return onlineId;}
+	public void SetOnlineId(String _value){onlineId = _value;}
+	
 	public Image(){
 		
 	}
